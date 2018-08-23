@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -8,7 +8,48 @@
         <item name="colorAccent">@color/MonaLisa</item>
         <item name="android:windowBackground">@color/snow</item>
         <item name="android:textColor">@color/makara</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="card_style" parent="CardView">
+        <item name="cardBackgroundColor">@color/light_gray</item>
+        <item name="android:clickable">true</item>
+        <item name="cardCornerRadius">7dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="cardElevation">7dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
 
     </style>
 
+    <style name="buttonstyle">
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColor">@color/snow</item>
+        <item name="android:background">@drawable/box</item>
+    </style>
+
+    <style name="textstyletitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/digital_sans</item>
+    </style>
+
+    <style name="textlable" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/makara</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/MonaLisa</item>
+        <item name="colorControlNormal">@color/MonaLisa</item>
+        <item name="colorControlActivated">@color/MonaLisa</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>
