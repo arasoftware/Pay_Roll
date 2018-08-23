@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="MonaLisa">#FF8F8F</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="snow">#F9F9F9</color>
+    <color name="makara">#5F5A53</color>
+</resources>
