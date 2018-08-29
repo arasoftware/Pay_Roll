@@ -36,10 +36,10 @@
 
                 <EditText
                     android:id="@+id/username"
+                    android:imeOptions="actionNext"
                     android:layout_width="match_parent"
+                    android:drawablePadding="20dp"
                     android:layout_height="match_parent"
-                    android:drawableLeft="@drawable/bitmapuser"
-                    android:drawableStart="@drawable/bitmapuser"
                     app:backgroundTint="@color/MonaLisa" />
 
             </android.support.design.widget.TextInputLayout>
@@ -52,21 +52,23 @@
                 android:hint="@string/password">
 
                 <EditText
+                    android:imeOptions="actionNext"
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:drawableLeft="@drawable/bitmapkey"
-                    android:drawableStart="@drawable/bitmapkey"
+                    android:drawablePadding="20dp"
                     app:backgroundTint="@color/MonaLisa" />
 
             </android.support.design.widget.TextInputLayout>
 
             <Button
                 style="@style/buttonstyle"
+                android:id="@+id/login"
                 android:layout_width="wrap_content"
+                android:imeOptions="actionNext"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:text="@string/login" />
 
         </LinearLayout>

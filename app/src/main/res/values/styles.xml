@@ -26,8 +26,6 @@
     </style>
 
     <style name="buttonstyle">
-        <item name="android:focusable">true</item>
-        <item name="android:clickable">true</item>
         <item name="android:textStyle">bold</item>
         <item name="android:ems">10</item>
         <item name="android:textColor">@color/snow</item>
@@ -52,4 +50,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+
 </resources>
