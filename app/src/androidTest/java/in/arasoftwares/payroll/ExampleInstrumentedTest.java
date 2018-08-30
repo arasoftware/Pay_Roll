@@ -1,4 +1,4 @@
-package in.arasoftwares.sample;
+package in.arasoftwares.payroll;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("in.arasoftwares.sample", appContext.getPackageName());
+        assertEquals("in.arasoftwares.payroll", appContext.getPackageName());
     }
 }

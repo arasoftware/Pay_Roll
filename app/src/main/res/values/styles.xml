@@ -3,16 +3,25 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/MonaLisa</item>
-        <item name="colorPrimaryDark">@color/MonaLisa</item>
-        <item name="colorAccent">@color/MonaLisa</item>
+        <item name="colorPrimary">@color/grass</item>
+        <item name="colorPrimaryDark">@color/grass</item>
+        <item name="colorAccent">@color/grass</item>
+        <item name="android:windowBackground">@color/snow</item>
+        <item name="android:textColor">@color/makara</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    <style name="AppTheme.grass" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/grass</item>
+        <item name="colorPrimaryDark">@color/grass</item>
+        <item name="colorAccent">@color/grass</item>
         <item name="android:windowBackground">@color/snow</item>
         <item name="android:textColor">@color/makara</item>
         <item name="android:typeface">sans</item>
     </style>
 
     <style name="card_style" parent="CardView">
-        <item name="cardBackgroundColor">@color/light_gray</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
         <item name="android:clickable">true</item>
         <item name="cardCornerRadius">7dp</item>
         <item name="android:layout_marginTop">1dp</item>
@@ -25,14 +34,16 @@
 
     </style>
 
-    <style name="buttonstyle">
+    <style name="buttonstyle" parent="@android:style/Widget.Holo.Button">
         <item name="android:textStyle">bold</item>
-        <item name="android:ems">10</item>
+        <item name="android:padding">10dp</item>
         <item name="android:textColor">@color/snow</item>
         <item name="android:background">@drawable/box</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
     </style>
 
-    <style name="textstyletitle">
+    <style name="editextstyle">
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/digital_sans</item>
     </style>
@@ -41,15 +52,20 @@
         <!-- Hint color and label color in FALSE state -->
         <item name="android:textColorHint">@color/makara</item>
         <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
-        <item name="colorAccent">@color/MonaLisa</item>
-        <item name="colorControlNormal">@color/MonaLisa</item>
-        <item name="colorControlActivated">@color/MonaLisa</item>
+        <item name="colorAccent">@color/grass</item>
+        <item name="colorControlNormal">@color/grass</item>
+        <item name="colorControlActivated">@color/grass</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+    <style name="tab" parent="@style/Widget.Design.TabLayout">
+        <item name="tabBackground">@color/grass</item>
+        <item name="tabIndicatorColor">@color/light_gray</item>
+        <item name="tabSelectedTextColor">@color/snow</item>
 
+    </style>
 
 </resources>

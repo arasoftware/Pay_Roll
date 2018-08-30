@@ -1,4 +1,4 @@
-package in.arasoftwares.sample;
+package in.arasoftwares.payroll;
 
 import org.junit.Test;
 

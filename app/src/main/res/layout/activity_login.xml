@@ -19,7 +19,7 @@
             android:padding="20dp">
 
             <TextView
-                style="@style/textstyletitle"
+                style="@style/editextstyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -37,10 +37,12 @@
                 <EditText
                     android:id="@+id/username"
                     android:imeOptions="actionNext"
+                    android:drawableLeft="@drawable/user"
                     android:layout_width="match_parent"
                     android:drawablePadding="20dp"
                     android:layout_height="match_parent"
-                    app:backgroundTint="@color/MonaLisa" />
+                    app:backgroundTint="@color/grass"
+                    android:drawableStart="@drawable/user" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -54,10 +56,12 @@
                 <EditText
                     android:imeOptions="actionNext"
                     android:id="@+id/password"
+                    android:drawableLeft="@drawable/lock"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:drawablePadding="20dp"
-                    app:backgroundTint="@color/MonaLisa" />
+                    app:backgroundTint="@color/grass"
+                    android:drawableStart="@drawable/lock" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -65,9 +69,9 @@
                 style="@style/buttonstyle"
                 android:id="@+id/login"
                 android:layout_width="wrap_content"
-                android:imeOptions="actionNext"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:ems="10"
                 android:layout_marginTop="20dp"
                 android:text="@string/login" />
 
