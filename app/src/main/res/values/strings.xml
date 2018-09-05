@@ -14,4 +14,6 @@
     <string name="hint_cancel">Cancel</string>
     <string name="hint_clear">Clear</string>
     <string name="hint_save">Save</string>
+    <string name="used_leave">used leaves</string>
+    <string name="avai_leave">available_leaves</string>
 </resources>

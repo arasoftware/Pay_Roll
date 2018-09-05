@@ -3,25 +3,41 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/grass</item>
+        <item name="colorPrimary">@color/snow</item>
         <item name="colorPrimaryDark">@color/grass</item>
         <item name="colorAccent">@color/grass</item>
         <item name="android:windowBackground">@color/snow</item>
-        <item name="android:textColor">@color/makara</item>
         <item name="android:typeface">sans</item>
     </style>
     <style name="AppTheme.grass" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/grass</item>
         <item name="colorPrimaryDark">@color/grass</item>
+        <item name="android:textColor">@color/grass</item>
         <item name="colorAccent">@color/grass</item>
         <item name="android:windowBackground">@color/snow</item>
-        <item name="android:textColor">@color/makara</item>
         <item name="android:typeface">sans</item>
+
+    </style>
+
+    <!-- style for the action bar backgrounds -->
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@color/snow</item>
+        <item name="background">@color/snow</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="subtitleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <!-- Text -->
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/grass</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
     <style name="card_style" parent="CardView">
-        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardBackgroundColor">@color/grass</item>
         <item name="android:clickable">true</item>
         <item name="cardCornerRadius">7dp</item>
         <item name="android:layout_marginTop">1dp</item>
@@ -29,7 +45,6 @@
         <item name="android:layout_marginRight">1dp</item>
         <item name="android:layout_marginLeft">1dp</item>
         <item name="cardElevation">7dp</item>
-        <item name="android:focusable">true</item>
         <item name="android:foreground">?android:attr/selectableItemBackground</item>
 
     </style>
@@ -39,15 +54,20 @@
         <item name="android:padding">10dp</item>
         <item name="android:textColor">@color/snow</item>
         <item name="android:background">@drawable/box</item>
-        <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
+        <item name="android:titleTextStyle">@style/textstyle</item>
     </style>
 
     <style name="editextstyle">
+        <item name="android:color">@color/makara</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/digital_sans</item>
     </style>
-
+    <style name="textstyle">
+        <item name="android:color">@color/grass</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/digital_sans</item>
+    </style>
     <style name="textlable" parent="TextAppearance.AppCompat">
         <!-- Hint color and label color in FALSE state -->
         <item name="android:textColorHint">@color/makara</item>

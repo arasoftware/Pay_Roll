@@ -48,11 +48,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        // Setting ToolBar as ActionBar
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
         // Button to open signature panel
         btn_get_sign = (Button) findViewById(R.id.signature);
 
