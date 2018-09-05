@@ -5,15 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
-import android.widget.Switch;
 
-import in.arasoftwares.payroll.util.Constant;
 
-import static in.arasoftwares.payroll.util.Constant.snack;
+import in.arasoftwares.payroll.Utils.Constant;
+
+import static in.arasoftwares.payroll.Utils.Constant.snack;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,9 +27,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         views();
-        if (!Constant.isNetworkAvailable(this)) {
-            snack(relativeLayout, "" + R.string.internet);
-        }
 
 
     }
@@ -40,15 +36,24 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         userName = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
         login = (Button) findViewById(R.id.login);
+        if (!Constant.isNetworkAvailable(this)) {
+            snack(relativeLayout, "" + R.string.internet);
+        }
         login.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View v) {
 
-        switch (v.getId()){
-            default :
-                Log.e(TAG,"No Listener Found");
+        switch (v.getId()) {
+
+            case R.id.login:
+                startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                finish();
+                break;
+            default:
+                Log.e(TAG, "No Listener Found");
                 break;
         }
     }

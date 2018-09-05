@@ -9,4 +9,9 @@
     <string name="empty_not_saved">Word not saved because it is empty.</string>
     <string name="leave">Leave Application</string>
     <string name="internet">please check your network connection</string>
+    <string name="hint_sign">Plesae put Signature Above</string>
+    <string name="dialog_title">Dialog Sample</string>
+    <string name="hint_cancel">Cancel</string>
+    <string name="hint_clear">Clear</string>
+    <string name="hint_save">Save</string>
 </resources>

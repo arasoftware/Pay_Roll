@@ -67,5 +67,13 @@
         <item name="tabSelectedTextColor">@color/snow</item>
 
     </style>
-
+    <style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/snow</item>
+        <item name="android:textColorPrimary">@color/snow</item>
+        <item name="android:textColor">@color/makara</item>
+        <item name="android:background">@color/snow</item>
+        <item name="colorControlNormal">@color/grass</item>
+        <item name="colorControlActivated">@color/grass</item>
+        <item name="colorControlHighlight">@color/grass</item>
+    </style>
 </resources>
