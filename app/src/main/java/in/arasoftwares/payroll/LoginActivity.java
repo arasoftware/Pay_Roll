@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 
 
+import java.security.Signature;
+
 import in.arasoftwares.payroll.Utils.Constant;
 
 import static in.arasoftwares.payroll.Utils.Constant.snack;
@@ -49,7 +51,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         switch (v.getId()) {
 
             case R.id.login:
-                startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                startActivity(new Intent(LoginActivity.this,SignatureActivity.class));
                 finish();
                 break;
             default:

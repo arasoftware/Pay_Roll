@@ -3,37 +3,13 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/snow</item>
-        <item name="colorPrimaryDark">@color/grass</item>
-        <item name="colorAccent">@color/grass</item>
-        <item name="android:windowBackground">@color/snow</item>
-        <item name="android:typeface">sans</item>
-    </style>
-    <style name="AppTheme.grass" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/grass</item>
         <item name="colorPrimaryDark">@color/grass</item>
-        <item name="android:textColor">@color/grass</item>
         <item name="colorAccent">@color/grass</item>
         <item name="android:windowBackground">@color/snow</item>
         <item name="android:typeface">sans</item>
+        <item name="android:titleTextStyle">@color/grass</item>
 
-    </style>
-
-    <!-- style for the action bar backgrounds -->
-    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
-        <item name="android:background">@color/snow</item>
-        <item name="background">@color/snow</item>
-        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
-        <item name="android:subtitleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
-        <item name="titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
-        <item name="subtitleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
-    </style>
-
-    <!-- Text -->
-    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance">
-        <item name="android:textColor">@color/grass</item>
-        <item name="android:textSize">12sp</item>
     </style>
 
     <style name="card_style" parent="CardView">
@@ -64,7 +40,7 @@
         <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/digital_sans</item>
     </style>
     <style name="textstyle">
-        <item name="android:color">@color/grass</item>
+        <item name="android:textColor">@color/grass</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/digital_sans</item>
     </style>

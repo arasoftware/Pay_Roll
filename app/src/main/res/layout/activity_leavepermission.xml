@@ -14,7 +14,6 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:orientation="horizontal"
@@ -95,7 +94,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -105,27 +104,31 @@
                 android:weightSum="2">
 
                 <ImageView
-                    android:layout_margin="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:layout_weight="1.7"
                     android:src="@drawable/typeicon"
-                    android:tint="@color/grass"
-                    android:layout_weight="1.7" />
+                    android:tint="@color/grass" />
 
                 <LinearLayout
-                    android:layout_margin="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:weightSum="2"
                     android:layout_weight="0.3"
                     android:orientation="vertical">
 
                     <TextView
-                        android:text="Leave Type"
+                        android:layout_weight="1.2"
                         style="@style/textstyle"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="match_parent"
+                        android:text="@string/leave_type" />
 
                     <Spinner
+                        android:layout_weight="0.8"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -133,7 +136,209 @@
                 </LinearLayout>
 
             </LinearLayout>
-        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/startdate"
+                    android:layout_weight="1.7"
+                    android:src="@drawable/date"
+                    android:padding="5dp"
+                    android:tint="@color/grass" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:weightSum="2"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/textstyle"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/start_date" />
+                    <TextView
+                        android:text="@string/date"
+                        android:layout_weight="1"
+                        style="@style/editextstyle"
+                        android:id="@+id/startdatetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/enddate"
+                    android:layout_weight="1.7"
+                    android:src="@drawable/date"
+                    android:padding="5dp"
+                    android:tint="@color/grass" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.3"
+                    android:weightSum="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/textstyle"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/end_date" />
+
+
+                    <TextView
+                        android:id="@+id/enddatetext"
+                        android:layout_weight="1"
+                        android:text="@string/date"
+                        style="@style/editextstyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_height="60dp">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.4"
+                        android:padding="5dp"
+                        android:src="@drawable/time"
+                        android:id="@+id/starttime"
+                        android:tint="@color/grass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.6"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            style="@style/textstyle"
+                            android:layout_weight="1"
+                            android:text="@string/start_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:id="@+id/starttimetext"
+                            style="@style/editextstyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/time" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.4"
+                        android:padding="5dp"
+                        android:src="@drawable/time"
+                        android:id="@+id/endtime"
+                        android:tint="@color/grass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.6"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="2"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            style="@style/textstyle"
+                            android:layout_weight="1"
+                            android:text="@string/end_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:id="@+id/endtimetext"
+                            android:text="@string/time"
+                            style="@style/editextstyle"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/textlable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:hint="@string/note">
+
+            <EditText
+                style="@style/editextstyle"
+                android:drawableLeft="@drawable/note"
+                android:layout_width="match_parent"
+                android:drawableTint="@color/grass"
+                android:layout_height="match_parent"
+                android:drawablePadding="20dp"
+                app:backgroundTint="@color/grass"
+                android:drawableStart="@drawable/note" />
+
+        </android.support.design.widget.TextInputLayout>
+            <Button
+                android:layout_marginTop="10dp"
+                style="@style/buttonstyle"
+                android:text="@string/request"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+    </LinearLayout>
     </LinearLayout>
 
 </ScrollView>

@@ -30,7 +30,8 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".LeavePermission" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SignatureActivity"></activity>
     </application>
 
 </manifest>

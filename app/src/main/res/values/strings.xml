@@ -15,5 +15,14 @@
     <string name="hint_clear">Clear</string>
     <string name="hint_save">Save</string>
     <string name="used_leave">used leaves</string>
-    <string name="avai_leave">available_leaves</string>
+    <string name="avai_leave">available leaves</string>
+    <string name="leave_type">leave type</string>
+    <string name="start_date">start date</string>
+    <string name="end_date">end date</string>
+    <string name="date">day/month/year</string>
+    <string name="time">hh/mm</string>
+    <string name="start_time">start time</string>
+    <string name="end_time">end time</string>
+    <string name="note">note</string>
+    <string name="request">request leave</string>
 </resources>
