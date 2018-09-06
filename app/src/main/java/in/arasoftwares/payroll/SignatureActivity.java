@@ -76,7 +76,6 @@ public class SignatureActivity extends AppCompatActivity  {
                 Log.v("log_tag", "Panel Saved");
                 view.setDrawingCacheEnabled(true);
                 mSignature.save(view, StoredPath);
-                dialog.dismiss();
                 Toast.makeText(getApplicationContext(), "Successfully Saved", Toast.LENGTH_SHORT).show();
                 // Calling the same class
                 recreate();
@@ -87,12 +86,10 @@ public class SignatureActivity extends AppCompatActivity  {
         mCancel.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Log.v("log_tag", "Panel Canceled");
-                dialog.dismiss();
                 // Calling the same class
                 recreate();
             }
         });
-        dialog.show();
     }
 
 
