@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">sample</string>
+    <string name="app_name">Pay Roll</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="welcome">welcome</string>
+    <string name="welcome">Welcome</string>
     <string name="login">Login</string>
     <string name="hint_word">Word...</string>
     <string name="button_save">Save</string>
@@ -14,15 +14,23 @@
     <string name="hint_cancel">Cancel</string>
     <string name="hint_clear">Clear</string>
     <string name="hint_save">Save</string>
-    <string name="used_leave">used leaves</string>
-    <string name="avai_leave">available leaves</string>
-    <string name="leave_type">leave type</string>
-    <string name="start_date">start date</string>
-    <string name="end_date">end date</string>
-    <string name="date">day/month/year</string>
+    <string name="used_leave">Used leaves</string>
+    <string name="avai_leave">Available leaves</string>
+    <string name="leave_type">Leave type</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="date">Day/Month/Year</string>
     <string name="time">hh/mm</string>
-    <string name="start_time">start time</string>
-    <string name="end_time">end time</string>
-    <string name="note">note</string>
-    <string name="request">request leave</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>
+    <string name="note">Note</string>
+    <string name="request">Request leave</string>
+    <string name="leavereq">Leave</string>
+    <string name="leaveper">Leave Permission</string>
+    <string name="logout">Logout</string>
+    <string name="ara_soft">Ara soft</string>
+    <string name="www">www.Arasoftwares.com</string>
+    <string name="welmsg">Welcome User !</string>
+    <string name="ttldate">Total date</string>
+    <string name="dash_board">Dash Board</string>
 </resources>

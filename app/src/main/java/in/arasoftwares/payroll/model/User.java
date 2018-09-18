@@ -1,4 +1,7 @@
-package in.arasoftwares.payroll.Model;
+package in.arasoftwares.payroll.model;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 public class User {
     public String getUsername() {
@@ -23,6 +26,10 @@ public class User {
         this.password = password;
     }
 
-    String username;
-    String password;
+    @SerializedName("")
+    @Expose
+    private String username;
+    @SerializedName("")
+    @Expose
+    private String password;
 }

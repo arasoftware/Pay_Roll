@@ -10,11 +10,7 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 
 
-import java.security.Signature;
-
-import in.arasoftwares.payroll.Utils.Constant;
-
-import static in.arasoftwares.payroll.Utils.Constant.snack;
+import in.arasoftwares.payroll.utils.CommonUtils;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -38,8 +34,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         userName = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
         login = (Button) findViewById(R.id.login);
-        if (!Constant.isNetworkAvailable(this)) {
-            snack(relativeLayout, "" + R.string.internet);
+        if (!CommonUtils.isNetworkAvailable(this)) {
+            CommonUtils.showSnack(relativeLayout, "" + R.string.internet);
         }
         login.setOnClickListener(this);
 
@@ -51,7 +47,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         switch (v.getId()) {
 
             case R.id.login:
-                startActivity(new Intent(LoginActivity.this,SignatureActivity.class));
+                startActivity(new Intent(LoginActivity.this,DashBoard.class));
                 finish();
                 break;
             default:
